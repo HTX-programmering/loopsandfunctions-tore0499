@@ -1,0 +1,87 @@
+//6.4
+String lokke="Hej med dig!";
+for (int skibidi=0; skibidi<= 5; skibidi=skibidi+1) {
+  char bus1=lokke.charAt(skibidi);
+  print(bus1);
+}
+
+//6.5
+//For løkke
+  String sætning = "Dette er en sætning, som indeholder mange e'er. Men hvor mange er der?";
+  int eAntal = 0;
+  for (int i = 0; i < sætning.length(); i=i+1) {
+    if (sætning.charAt(i) == 'e') {
+      println(sætning.charAt(i));
+      eAntal=eAntal+1;
+    }
+  }
+  println(eAntal);
+  println(sætning.length());
+
+//While løkke
+  String sætning = "Dette er en sætning, som indeholder mange e'er. Men hvor mange er der?";
+  int index = 0;
+  int eAntal = 0;
+  
+  while (index < sætning.length()) {
+    if (sætning.charAt(index) == 'e') {
+      println(sætning.charAt(index));
+      eAntal=eAntal+1;
+    }
+    index=index+1;
+  }
+  
+  println(eAntal);
+  println(sætning.length());
+
+//6.6
+ String sentence = "I Afrika lever der mange dyr på savannen, et af dem er zebraen. Zebraen er en flok dyr.";
+  int index = 0;
+    while (index < sentence.length()) {
+    char currentChar = sentence.charAt(index);
+    if (currentChar == 'Z' || currentChar == 'z') {
+      println(index);
+      break;
+    }
+    index=index+1;
+  }
+
+//6.7
+//For løkke
+String sætning = "I Afrika lever der mange dyr på savannen, et af dem er zebraen. Zebraen er et flokdyr.";
+  int zAntal = 0;
+ sætning = sætning.toLowerCase();
+  for (int i = 0; i < sætning.length(); i=i+1) {
+    if (sætning.charAt(i) == 'z') {
+      println(sætning.charAt(i));
+      zAntal=zAntal+1;
+    }
+  }
+  println(zAntal);
+  println(sætning.length());
+
+//6.8
+//for løkke (6.6 omskrevet)
+  String sætning = "I Afrika lever der mange dyr på savannen, et af dem er zebraen. Zebraen er en flok dyr.";
+  for (int index = 0; index < sætning.length(); index++) {
+    char currentChar = sætning.charAt(index);
+    if (currentChar == 'Z' || currentChar == 'z') {
+      println(index);
+      break;
+    }
+  }
+
+//While løkke (6.7 omskrevet)
+  String sætning = "I Afrika lever der mange dyr på savannen, et af dem er zebraen. Zebraen er et flokdyr.";
+  int index = 0;
+  int zAntal = 0;
+ sætning = sætning.toLowerCase();
+  while (index < sætning.length()) {
+    if (sætning.charAt(index) == 'z') {
+      println(sætning.charAt(index));
+      zAntal=zAntal+1;
+    }
+    index=index+1;
+  }
+  println(zAntal);
+  println(sætning.length());
